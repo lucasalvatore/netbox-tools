@@ -37,8 +37,8 @@ for label in nb_device_status['device:status']:
 # add device to netbox
 try:
 	nb.dcim.devices.create(
-		name = dev_name,
-		device_role = role,
+	name = dev_name,
+	device_role = role,
        	device_type = device_type,
        	serial = serial_number,
        	site = site,
