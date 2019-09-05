@@ -32,7 +32,7 @@ optional arguments:
   --ipv4 IPV4, -ip4 IPV4
                         IPv4 address of mgmt interface
   --ipv6 IPV6, -ip6 IPV6
-                        IPv6 address of mgmt interface```
+                        IPv6 address of mgmt interface
                         
  python netbox_add_device.py -d luca-test22 -r "TOR Switch" -ma Juniper -mo EX4300-48T -s abc123 -si EWR1 -st Active -i ae0 -ip4 6.7.8.9/32 -ip6 2001::a/128
 luca-test22 Has been added to NetBox
