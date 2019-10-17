@@ -260,4 +260,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-# check int description on ESRs to get ESR <> BSR link / IP and add to device
+
