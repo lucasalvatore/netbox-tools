@@ -6,9 +6,9 @@ import argparse
 import sys
 
 nb = pynetbox.api(
-    "http://netbox.ewr1.packet.net",
-    private_key_file="/Users/luca/git/netbox-key.pem",
-    token="08d7501c315998c8ba496cbdeb82821ba7495ee7",
+    http://[NETBOX_URL]",
+    private_key_file="/path/to/key",
+    token="token",
 )
 
 
