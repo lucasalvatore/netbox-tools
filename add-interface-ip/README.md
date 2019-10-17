@@ -9,4 +9,4 @@ Contains checks so that it won't add an IP if it already exists
 ## Usage
 Pass device name and username via CLI args
 <br>
-`python netbox_interface_ip_add.py -d dsr2.syd2.packet.net -u luca`
+`python netbox_interface_ip_add.py -d switch1.mydomain.net -u luca`
