@@ -145,7 +145,7 @@ def main():
                                     )
 
     # Get netbox device ID
-    dev_id = nb.dcim.devices.get(name=args.dev_name.replace(".packet.net", "")).id
+    dev_id = nb.dcim.devices.get(name=args.dev_name).id
 
     # Add V4 interfaces to netbox
     print(f"Adding Interfaces to Device {args.dev_name}")
@@ -159,14 +159,14 @@ def main():
     # Get interface IDs and append to v4 dict
     for interface, values in v4_ints.items():
         interface_id = nb.dcim.interfaces.get(
-            name=interface, device=args.dev_name.replace(".packet.net", "")
+            name=interface, device=args.dev_name
         ).id
         v4_ints[interface].append(interface_id)
 
     # Get interface IDs and append to v6 dict
     for interface, values in v6_ints.items():
         interface_id = nb.dcim.interfaces.get(
-            name=interface, device=args.dev_name.replace(".packet.net", "")
+            name=interface, device=args.dev_name
         ).id
         v6_ints[interface].append(interface_id)
 
