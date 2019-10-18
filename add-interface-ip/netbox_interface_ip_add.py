@@ -5,11 +5,11 @@ import re
 import argparse
 import sys
 
-nb = pynetbox.api(
-    http://[NETBOX_URL]",
-    private_key_file="/path/to/key",
-    token="token",
-)
+nb_url = os.environ.get("NETBOX_URL")
+nb_keyfile = os.environ.get("NETBOX_KEYFILE")
+nb_token = os.environ.get("NETBOX_TOKEN")
+
+nb = pynetbox.api(nb_url, private_key_file=nb_keyfile, token=nb_token)
 
 
 def arguments():
